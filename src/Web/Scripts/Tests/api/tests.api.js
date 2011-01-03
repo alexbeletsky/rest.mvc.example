@@ -59,7 +59,7 @@
         });
     });
 
-    tests("delete post test", function () {
+    test("delete post test", function () {
         var me = this;
 
         var method = 'posts/delete';
