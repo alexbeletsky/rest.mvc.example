@@ -80,6 +80,20 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="ApiTests.htm" />
+    <Content Include="Scripts\Tests\api\tests.api.js" />
+    <Content Include="Scripts\Tests\framework\api\apitest.js" />
+    <Content Include="Scripts\Tests\framework\funcunit\funcunit.js" />
+    <Content Include="Scripts\Tests\framework\funcunit\qunit.css" />
+    <Content Include="Scripts\Tests\framework\funcunit\selenium\env.js" />
+    <Content Include="Scripts\Tests\framework\funcunit\selenium\js.jar" />
+    <Content Include="Scripts\Tests\framework\funcunit\selenium\run.js" />
+    <Content Include="Scripts\Tests\framework\funcunit\selenium\selenium-java-client-driver.jar" />
+    <Content Include="Scripts\Tests\framework\funcunit\selenium\selenium-server.jar" />
+    <Content Include="Scripts\Tests\framework\funcunit\settings.js" />
+    <Content Include="Scripts\Tests\framework\funcunit\syn.js" />
+    <Content Include="Scripts\Tests\framework\funcunit\template.html" />
+    <Content Include="Scripts\Tests\framework\qunit\qunit.css" />
+    <Content Include="Scripts\Tests\framework\qunit\qunit.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -111,6 +125,10 @@
       <LastGenOutput>RestExample.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Scripts\Tests\framework\funcunit\envjs" />
+    <None Include="Scripts\Tests\framework\funcunit\envjs.bat" />
+    <None Include="Scripts\Tests\framework\funcunit\README" />
+    <None Include="Scripts\Tests\framework\funcunit\run.bat" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
