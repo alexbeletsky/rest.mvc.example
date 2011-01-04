@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     // helper
     function createCallUrl(url, method, params) {
         var callUrl = url + "/" + method;
@@ -12,7 +11,7 @@
 
     module("rest api example tests", {
         setup: function () {
-            this.url = 'api/v1/';
+            this.url = 'api/v1';
         }
     });
 

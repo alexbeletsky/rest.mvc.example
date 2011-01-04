@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RouteDebug">
+      <HintPath>..\..\lib\RouteDebug\RouteDebug.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -66,6 +69,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\v1\ApiV1Registration.cs" />
+    <Compile Include="API\v1\Controllers\ApiV1Controller.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -94,6 +100,7 @@
     <Content Include="Scripts\Tests\framework\funcunit\template.html" />
     <Content Include="Scripts\Tests\framework\qunit\qunit.css" />
     <Content Include="Scripts\Tests\framework\qunit\qunit.js" />
+    <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -116,7 +123,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="API\v1\Models\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
