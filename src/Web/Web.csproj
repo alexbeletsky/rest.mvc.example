@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Mvc">
+      <HintPath>..\..\lib\MvcFutures\Microsoft.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="RouteDebug">
       <HintPath>..\..\lib\RouteDebug\RouteDebug.dll</HintPath>
     </Reference>
@@ -71,10 +74,12 @@
   <ItemGroup>
     <Compile Include="API\v1\ApiV1Registration.cs" />
     <Compile Include="API\v1\Controllers\ApiV1Controller.cs" />
+    <Compile Include="API\v1\Models\PostDescriptor.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\HandleJsonError.cs" />
     <Compile Include="Models\RestExample.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +91,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="ApiTests.htm" />
+    <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\Tests\api\tests.api.js" />
     <Content Include="Scripts\Tests\framework\api\apitest.js" />
     <Content Include="Scripts\Tests\framework\funcunit\funcunit.js" />
@@ -123,7 +129,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="API\v1\Models\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

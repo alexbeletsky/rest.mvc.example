@@ -14,7 +14,7 @@ namespace Web.API.v1
             context.MapRoute(
                 "ApiV1_posts",
                 "api/v1/posts/{action}/{userName}/{postUrl}",
-                new { controller = "ApiV1", postUrl = UrlParameter.Optional  });
+                new { controller = "ApiV1", postUrl = UrlParameter.Optional });
         }
     }
 }

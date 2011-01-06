@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Microsoft.Web.Mvc;
 
 namespace Web
 {
@@ -29,6 +30,10 @@ namespace Web
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
+
+            // Enable passing Json to Action
+            // http://haacked.com/archive/2010/04/15/sending-json-to-an-asp-net-mvc-action-method-argument.aspx
+            ValueProviderFactories.Factories.Add(new JsonValueProviderFactory());
 
             // RouteDebugger
             //RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
